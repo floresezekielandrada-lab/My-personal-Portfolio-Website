@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Ezekiel is an aspiring front-end developer crafting thoughtful, responsive digital experiences." />
+    <meta name="theme-color" content="#080b12" />
+    <title>Ezekiel — Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { ink: "#080b12", cyan: "#75e5ef" },
+            fontFamily: { sans: ["DM Sans", "sans-serif"], display: ["Space Grotesk", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Ezekiel, home">
+          <span class="brand-mark">E</span><span>EZEKIEL<span class="brand-period">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+          <i data-lucide="menu" class="menu-icon"></i><i data-lucide="x" class="close-icon"></i>
+        </button>
+        <div class="nav-links" id="primary-navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-cta" href="cv.html">Download CV <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
+          <h1 class="hero-title reveal" id="hero-title">Hello, I’m<br /><span class="title-name">Ezekiel<span class="cyan-dot">.</span></span></h1>
+          <p class="hero-role reveal"><span class="role-prefix">I’m a </span><span class="typed-role" aria-live="polite">Front-End Developer</span><span class="type-caret" aria-hidden="true"></span></p>
+          <p class="hero-description reveal">I'm an aspiring web developer, continuously learning, growing, and improving my craft. Every skill I develop and every project I create is an opportunity to honor God and use the gifts He has given me.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#about">A little about me <i data-lucide="arrow-down-right"></i></a>
+            <a class="button button-quiet" href="#contact">Get in touch <i data-lucide="arrow-up-right"></i></a>
+          </div>
+          <div class="hero-socials reveal" aria-label="Social links">
+            <span>FIND ME ON</span>
+            <a href="https://github.com/floresezekielandrada-lab" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="code-xml"></i></a>
+            <a href="https://www.facebook.com/ezequ.xrzrx" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8h3.7z" /></svg></a>
+            <a href="#contact" aria-label="Contact me"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="portrait-orbit orbit-one"></div><div class="portrait-orbit orbit-two"></div>
+          <div class="portrait-frame">
+            <img src="700870168_988888100346518_3389696231346449766_n (1).jpg" alt="Ezekiel's profile portrait" fetchpriority="high" />
+          </div>
+          <div class="float-card float-card-top"><span class="float-icon"><i data-lucide="sparkles"></i></span><span>Curious by nature<br /><strong>Creative by choice</strong></span></div>
+          <div class="float-card float-card-bottom"><span class="availability-ring"></span><span>Currently learning<br /><strong>Every single day</strong></span></div>
+          <div class="hero-index">01 <span>/ 04</span></div>
+        </div>
+        <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="section-wrap about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A LITTLE ABOUT ME <span class="eyebrow-line"></span></p>
+          <h2 class="section-title" id="about-title">Creating with <span class="text-gradient">Purpose,</span> Guided by Faith.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="about-lead">Growing through challenges, creating with passion, and giving glory to God.</p>
+            <p>I'm an aspiring front-end developer who believes that creativity and technology are gifts that can be used for a greater purpose. I enjoy transforming ideas into meaningful, responsive, and user-friendly websites while continuously learning and improving my skills.</p>
+            <p>As I continue my journey in web development, I strive to grow not only as a developer but also as a person guided by faith, humility, and perseverance. My goal is to become a professional front-end developer, create digital experiences that make a positive difference, and honor God through the work of my hands.</p>
+            <p class="about-verse"><em>"Whatever you do, do it all for the glory of God."</em> <span>— 1 Corinthians 10:31</span></p>
+            <a class="text-link" href="#contact">More about working together <i data-lucide="arrow-up-right"></i></a>
+          </div>
+          <div class="about-note reveal">
+            <div class="note-top"><span>MY APPROACH</span><i data-lucide="move-up-right"></i></div>
+            <p>“For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.”<br /><span>Jeremiah 29:11</span></p>
+            <div class="note-bottom"><span class="note-line"></span><span>GOOD DESIGN, GOOD DETAILS</span></div>
+          </div>
+        </div>
+        <div class="skills-heading reveal">
+          <p class="eyebrow">TOOLS IN MY TOOLKIT <span class="eyebrow-line"></span></p>
+          <span class="skills-caption">Always learning. Always building.</span>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="code-2"></i></span><span class="skill-name">HTML5</span><span class="skill-type">STRUCTURE</span></article>
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="paintbrush-2"></i></span><span class="skill-name">CSS3</span><span class="skill-type">STYLING</span></article>
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="braces"></i></span><span class="skill-name">JavaScript</span><span class="skill-type">INTERACTIVITY</span></article>
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="wind"></i></span><span class="skill-name">Tailwind CSS</span><span class="skill-type">UI TOOLKIT</span></article>
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="panels-top-left"></i></span><span class="skill-name">Responsive Design</span><span class="skill-type">ALL SCREENS</span></article>
+          <article class="skill-card reveal"><span class="skill-icon"><i data-lucide="pen-tool"></i></span><span class="skill-name">UI / UX Design</span><span class="skill-type">USER FIRST</span></article>
+        </div>
+      </section>
+
+      <section class="section-wrap gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading gallery-heading reveal">
+          <div><p class="eyebrow">A FEW THINGS I’VE BEEN UP TO <span class="eyebrow-line"></span></p><h2 class="section-title" id="gallery-title">Selected <span class="text-gradient">moments.</span></h2></div>
+        </div>
+        <div class="filter-list reveal" role="group" aria-label="Filter gallery">
+          <button class="filter-button is-selected" type="button" data-filter="All" aria-pressed="true">All <span>04</span></button>
+          <button class="filter-button" type="button" data-filter="Projects" aria-pressed="false">Projects</button>
+          <button class="filter-button" type="button" data-filter="Activities" aria-pressed="false">Activities</button>
+          <button class="filter-button" type="button" data-filter="Achievements" aria-pressed="false">Achievements</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <button class="gallery-card gallery-large reveal" type="button" data-category="Projects" data-title="Digital spaces, thoughtfully made" data-description="A visual study in calm interfaces, considered typography, and the little details that make a digital product feel human." data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1600&amp;q=90">
+            <img src="9caac202-8de9-495a-bc45-8cafa5514aca.jpg" alt="Creative workspace with laptop and design tools" loading="lazy" />
+            <span class="gallery-overlay"><span class="gallery-meta">PROJECTS · 01</span><span class="gallery-title">Digital spaces, thoughtfully made</span><span class="gallery-open"><i data-lucide="arrow-up-right"></i></span></span>
+          </button>
+          <button class="gallery-card reveal" type="button" data-category="Activities" data-title="Growing Together in Faith" data-description="Moments of fellowship, worship, and connection as we grow closer to God and encourage one another in our walk with Christ." data-image="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=1600&amp;q=90">
+            <img src="823605238_3723034584538959_3772824342903377889_n.jpg" alt="Fellowship and faith activities" />
+            <span class="gallery-overlay"><span class="gallery-meta">ACTIVITIES · 02</span><span class="gallery-title">Growing Together in Faith</span><span class="gallery-open"><i data-lucide="arrow-up-right"></i></span></span>
+          </button>
+          <button class="gallery-card project-album-slide reveal" type="button" data-category="Projects" data-title="Interface, in progress" data-description="A frontend practice concept focused on a clean dashboard layout and an easy-to-follow information hierarchy." data-image="https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&amp;fit=crop&amp;w=1600&amp;q=90">
+            <img src="06977eee-fb9d-4348-8018-172b1e661908.jpg" alt="Web development project" />
+            <span class="gallery-overlay"><span class="gallery-meta">PROJECTS · 03</span><span class="gallery-title">Interface, in progress</span><span class="gallery-open"><i data-lucide="arrow-up-right"></i></span></span>
+          </button>
+          <button class="gallery-card gallery-tall reveal" type="button" data-category="Achievements" data-title="System Defended!" data-description="A meaningful achievement in my journey as a developer—our system successfully defended, reflecting the teamwork, dedication, and perseverance behind every step of the process." data-image="3744aaa9-61f7-4840-a3ca-d0999ead7aa1.webp">
+            <img src="3744aaa9-61f7-4840-a3ca-d0999ead7aa1.webp" alt="System defense achievement" />
+            <span class="gallery-overlay"><span class="gallery-meta">MILESTONES · 04</span><span class="gallery-title">System Defended!</span><span class="gallery-open"><i data-lucide="arrow-up-right"></i></span></span>
+          </button>
+          <button class="gallery-card reveal" type="button" data-category="Activities" data-title="Moments of Grace" data-description="Little moments of joy, fellowship, and gratitude that remind me of God's goodness and faithfulness in every season of life." data-image="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;w=1600&amp;q=90">
+            <img src="820264958_1434116038633879_170708345798737102_n.jpg" alt="A joyful moment of fellowship and gratitude" />
+            <span class="gallery-overlay"><span class="gallery-meta">ACTIVITIES · 05</span><span class="gallery-title">Moments of Grace</span><span class="gallery-open"><i data-lucide="arrow-up-right"></i></span></span>
+          </button>
+        </div>
+        <p class="gallery-footnote reveal"><i data-lucide="info"></i> Gallery images and captions are editable sample content—swap in your own work and milestones.</p>
+      </section>
+
+      <section class="section-wrap contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="contact-heading reveal">
+          <p class="eyebrow">HAVE A GOOD ONE IN MIND? <span class="eyebrow-line"></span></p>
+          <h2 class="section-title" id="contact-title">Let’s <span class="text-gradient">connect.</span></h2>
+          <p>I’m always happy to meet kind people, hear about interesting ideas, and explore what we could make together.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-aside reveal">
+            <div class="contact-note"><span class="contact-note-icon"><i data-lucide="send"></i></span><h3>Have a project<br />in mind?</h3><p>Tell me a little about it. I’ll be in touch as soon as I can.</p></div>
+            <div class="contact-detail"><span class="detail-label">CURRENTLY</span><span class="detail-value"><span class="status-dot"></span> Open to opportunities</span></div>
+            <div class="contact-socials"><span class="detail-label">AROUND THE WEB</span><div>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><i data-lucide="code-xml"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8h3.7z" /></svg></a>
+              <a href="#contact" aria-label="Contact me"><i data-lucide="mail"></i></a>
+            </div></div>
+          </div>
+          <form class="contact-form reveal" id="contact-form" data-endpoint="" novalidate>
+            <div class="form-row">
+              <label class="form-field"><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="How should I address you?" required minlength="2" /></label>
+              <label class="form-field"><span>Email address</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+            </div>
+            <label class="form-field"><span>Subject</span><input type="text" name="subject" placeholder="What would you like to talk about?" required minlength="3" /></label>
+            <label class="form-field"><span>Your message</span><textarea name="message" rows="4" placeholder="A few details to get us started..." required minlength="10"></textarea></label>
+            <div class="form-submit-row"><p class="form-status" id="form-status" role="status" aria-live="polite"></p><button class="button button-primary submit-button" type="submit">Send message <i data-lucide="arrow-up-right"></i></button></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">E</span><span>EZEKIEL<span class="brand-period">.</span></span></a>
+      <p>Designed with curiosity <span class="footer-heart">✳</span> Built with care.</p>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> Ezekiel. All rights reserved.</span><div><a href="#home">Back to top <i data-lucide="arrow-up-right"></i></a><span class="footer-location">MADE FOR THE WEB <span class="status-dot"></span></span></div></div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+    <dialog class="lightbox" aria-label="Gallery image viewer">
+      <button class="lightbox-close" type="button" aria-label="Close image viewer"><i data-lucide="x"></i></button>
+      <button class="lightbox-nav lightbox-previous" type="button" aria-label="Previous project image"><i data-lucide="chevron-left"></i></button>
+      <img class="lightbox-image" src="" alt="" />
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next project image"><i data-lucide="chevron-right"></i></button>
+      <div class="lightbox-caption"><div class="lightbox-caption-top"><span class="lightbox-category"></span><span class="lightbox-counter" aria-live="polite"></span></div><h2 class="lightbox-title"></h2><p class="lightbox-description"></p></div>
+    </dialog>
+  </body>
+</html>

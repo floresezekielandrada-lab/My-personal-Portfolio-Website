@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Ezekiel's front-end developer CV and skills." />
+    <meta name="theme-color" content="#080b12" />
+    <title>Ezekiel | CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="cv.js" defer></script>
+  </head>
+  <body class="cv-page">
+    <header class="site-header">
+      <nav class="nav-shell cv-nav" aria-label="CV navigation">
+        <a class="brand" href="index.html" aria-label="Ezekiel, portfolio home">
+          <span class="brand-mark">E</span><span>EZEKIEL<span class="brand-period">.</span></span>
+        </a>
+        <div class="cv-nav-actions">
+          <a class="nav-link" href="index.html">Back to portfolio</a>
+          <button class="nav-cta cv-print" type="button"><i data-lucide="download"></i> Download CV</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cv-sheet">
+      <section class="cv-intro">
+        <p class="eyebrow"><span class="status-dot"></span> PERSONAL CV</p>
+        <h1 class="cv-name">Ezekiel<span class="cyan-dot">.</span></h1>
+        <p class="cv-role">Aspiring Front-End Developer</p>
+        <p class="cv-summary">I'm an aspiring front-end developer who believes creativity and technology can be used for a greater purpose. I enjoy creating meaningful, responsive, and user-friendly websites while continuously learning and improving my skills.</p>
+      </section>
+
+      <section class="cv-section" aria-labelledby="cv-skills">
+        <div class="cv-section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2 id="cv-skills">Skills &amp; technologies</h2>
+        </div>
+        <div class="cv-skills">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Tailwind CSS</span>
+          <span>Responsive Web Design</span>
+          <span>UI / UX Design</span>
+        </div>
+      </section>
+
+      <section class="cv-section" aria-labelledby="cv-goal">
+        <div class="cv-section-heading">
+          <p class="eyebrow">WHERE I'M HEADED</p>
+          <h2 id="cv-goal">Career goal</h2>
+        </div>
+        <p class="cv-body">My goal is to become a professional front-end developer, create digital experiences that make a positive difference, and honor God through the work of my hands. I strive to grow with faith, humility, and perseverance.</p>
+      </section>
+
+      <blockquote class="cv-quote">
+        <p>“Whatever you do, do it all for the glory of God.”</p>
+        <cite>1 Corinthians 10:31</cite>
+      </blockquote>
+
+      <footer class="cv-footer">
+        <a class="button button-primary" href="index.html#contact">Get in touch <i data-lucide="arrow-up-right"></i></a>
+        <span>More about me at <a href="index.html">my portfolio</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
