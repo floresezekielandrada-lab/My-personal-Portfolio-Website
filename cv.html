@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="description" content="Ezekiel's front-end developer CV and skills." />
-    <meta name="theme-color" content="#080b12" />
-    <title>Ezekiel | CV</title>
+    <meta name="description" content="Ezekiel Andrada Flores's aspiring full-stack developer CV and skills." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Ezekiel Andrada Flores | CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,8 +16,8 @@
   <body class="cv-page">
     <header class="site-header">
       <nav class="nav-shell cv-nav" aria-label="CV navigation">
-        <a class="brand" href="index.html" aria-label="Ezekiel, portfolio home">
-          <span class="brand-mark">E</span><span>EZEKIEL<span class="brand-period">.</span></span>
+        <a class="brand" href="index.html" aria-label="Ezekiel Andrada Flores, portfolio home">
+          <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#26364b" d="M8 22C7 11 14 5 24 5s17 6 16 17l-3 12H11z"/><path fill="#f2c49f" d="M11 20c0-9 5-14 13-14s13 5 13 14v8c0 8-6 14-13 14s-13-6-13-14z"/><path fill="#26364b" d="M10 21C9 10 15 4 25 5c7 1 12 6 13 14-4-1-7-4-9-7-4 5-10 8-19 9z"/><path fill="none" stroke="#26364b" stroke-linecap="round" stroke-width="2" d="M17 24h4m6 0h4"/><circle cx="19" cy="27" r="1.5" fill="#26364b"/><circle cx="29" cy="27" r="1.5" fill="#26364b"/><path fill="none" stroke="#9a514a" stroke-linecap="round" stroke-width="1.8" d="M20 34c2 2 6 2 8 0"/><path fill="#75e5ef" d="M12 48c1-7 5-10 12-10s11 3 12 10z"/></svg></span><span class="brand-name">EZEKIEL ANDRADA FLORES<span class="brand-period">.</span></span>
         </a>
         <div class="cv-nav-actions">
           <a class="nav-link" href="index.html">Back to portfolio</a>
@@ -28,44 +28,59 @@
 
     <main class="cv-sheet">
       <section class="cv-intro">
-        <p class="eyebrow"><span class="status-dot"></span> PERSONAL CV</p>
-        <h1 class="cv-name">Ezekiel<span class="cyan-dot">.</span></h1>
-        <p class="cv-role">Aspiring Front-End Developer</p>
-        <p class="cv-summary">I'm an aspiring front-end developer who believes creativity and technology can be used for a greater purpose. I enjoy creating meaningful, responsive, and user-friendly websites while continuously learning and improving my skills.</p>
+        <h1 class="cv-name">Ezekiel Andrada Flores<span class="cyan-dot">.</span></h1>
+        <p class="cv-role">Aspiring Full-Stack Developer</p>
       </section>
 
       <section class="cv-section" aria-labelledby="cv-skills">
         <div class="cv-section-heading">
-          <p class="eyebrow">WHAT I'M LEARNING</p>
-          <h2 id="cv-skills">Skills &amp; technologies</h2>
+          <h2 id="cv-skills">Skills &amp; ratings</h2>
         </div>
-        <div class="cv-skills">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Tailwind CSS</span>
-          <span>Responsive Web Design</span>
-          <span>UI / UX Design</span>
+        <div class="cv-skills-grid">
+          <section class="cv-category" aria-labelledby="cv-programming-title">
+            <h3 id="cv-programming-title">Programming Languages</h3>
+            <table class="cv-skills-table">
+              <thead><tr><th scope="col">Skill</th><th scope="col">Rating</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">JavaScript</th><td><span class="skill-stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></td></tr>
+                <tr><th scope="row">Java</th><td><span class="skill-stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></td></tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="cv-category" aria-labelledby="cv-web-title">
+            <h3 id="cv-web-title">Web Technologies &amp; Design</h3>
+            <table class="cv-skills-table">
+              <thead><tr><th scope="col">Skill</th><th scope="col">Rating</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">HTML5</th><td><span class="skill-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></td></tr>
+                <tr><th scope="row">CSS3</th><td><span class="skill-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></td></tr>
+                <tr><th scope="row">Tailwind CSS</th><td><span class="skill-stars" role="img" aria-label="3 out of 5 stars">★★★☆☆</span></td></tr>
+                <tr><th scope="row">Responsive Web Design</th><td><span class="skill-stars" role="img" aria-label="3 out of 5 stars">★★★☆☆</span></td></tr>
+                <tr><th scope="row">UI / UX Design</th><td><span class="skill-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></td></tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="cv-category" aria-labelledby="cv-database-title">
+            <h3 id="cv-database-title">Database</h3>
+            <table class="cv-skills-table">
+              <thead><tr><th scope="col">Skill</th><th scope="col">Rating</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">MySQL</th><td><span class="skill-stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></td></tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="cv-category" aria-labelledby="cv-tools-title">
+            <h3 id="cv-tools-title">Tools</h3>
+            <table class="cv-skills-table">
+              <thead><tr><th scope="col">Skill</th><th scope="col">Rating</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Visual Studio Code</th><td><span class="skill-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></td></tr>
+                <tr><th scope="row">GitHub</th><td><span class="skill-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></td></tr>
+              </tbody>
+            </table>
+          </section>
         </div>
       </section>
-
-      <section class="cv-section" aria-labelledby="cv-goal">
-        <div class="cv-section-heading">
-          <p class="eyebrow">WHERE I'M HEADED</p>
-          <h2 id="cv-goal">Career goal</h2>
-        </div>
-        <p class="cv-body">My goal is to become a professional front-end developer, create digital experiences that make a positive difference, and honor God through the work of my hands. I strive to grow with faith, humility, and perseverance.</p>
-      </section>
-
-      <blockquote class="cv-quote">
-        <p>“Whatever you do, do it all for the glory of God.”</p>
-        <cite>1 Corinthians 10:31</cite>
-      </blockquote>
-
-      <footer class="cv-footer">
-        <a class="button button-primary" href="index.html#contact">Get in touch <i data-lucide="arrow-up-right"></i></a>
-        <span>More about me at <a href="index.html">my portfolio</a>.</span>
-      </footer>
     </main>
   </body>
 </html>
